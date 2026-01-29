@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Gestión de la sala de reuniones (Javier Gutiérrez García)",
+    'name': "- Gestión de la sala de reuniones (Javier Gutiérrez García)",
 
     'summary': "Módulo para la gestión de las salas de reuniones de la empresa",
 
