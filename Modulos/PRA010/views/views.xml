@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="jgg_reuniones.list">
+      <field name="name">jggReuniones list</field>
+      <field name="model">jgg_reuniones.jgg_reuniones</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="jgg_reuniones.action_window">
+      <field name="name">jggReuniones window</field>
+      <field name="res_model">jgg_reuniones.jgg_reuniones</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="jgg_reuniones.action_server">
+      <field name="name">jggReuniones server</field>
+      <field name="model_id" ref="model_jgg_reuniones_jgg_reuniones"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Reuniones Javier Gutiérrez García" id="jgg_reuniones.menu_root"/>
+
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="jgg_reuniones.menu_1" parent="jgg_reuniones.menu_root"/>
+    <menuitem name="Menu 2" id="jgg_reuniones.menu_2" parent="jgg_reuniones.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="jgg_reuniones.menu_1_list" parent="jgg_reuniones.menu_1"
+              action="jgg_reuniones.action_window"/>
+    <menuitem name="Server to list" id="jgg_reuniones" parent="jgg_reuniones.menu_2"
+              action="jgg_reuniones.action_server"/>
+-->
+  </data>
+</odoo>

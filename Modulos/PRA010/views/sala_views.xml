@@ -1,0 +1,50 @@
+<odoo>
+  <data>
+
+    <!-- FORM VIEW -->
+    <record model="ir.ui.view" id="reuniones_sala_form">
+      <field name="name">reuniones.sala.form</field>
+      <field name="model">reuniones.sala</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="descripcion"/>
+            <field name="reuniones">
+              <list>
+                <!-- fields -->
+              </list>
+            </field>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- LIST VIEW -->
+    <record model="ir.ui.view" id="reuniones_sala_list">
+      <field name="name">reuniones.sala.list</field>
+      <field name="model">reuniones.sala</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="descripcion"/>
+        </list>
+      </field>
+    </record>
+
+    <!-- ACTION -->
+    <record model="ir.actions.act_window" id="reuniones_sala_action_window">
+      <field name="name">Accesos Salas</field>
+      <field name="res_model">reuniones.sala</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- MENU ITEM -->
+    <menuitem id="reuniones_menu_sala"
+              name="Salas"
+              parent="reuniones_menu_root"
+              action="reuniones_sala_action_window"/>
+
+  </data>
+</odoo>
